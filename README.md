@@ -16,7 +16,7 @@ To run the application locally:
 1. Clone the repository:
 
    ```sh
-   git clone [<repository-url>](https://github.com/gaspardthrl/huggingface_streamlit_interaction)
+   git clone https://github.com/gaspardthrl/huggingface_streamlit_interaction
    ```
 
 2. Install the required packages:
