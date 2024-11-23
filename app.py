@@ -3,6 +3,8 @@ from streamlit.components.v1 import html
 from huggingface_hub import InferenceClient, HfApi
 from huggingface_hub.errors import HfHubHTTPError
 
+DEFAULT_HUGGING_FACE_TOKEN = "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"
+
 # Constants for model configurations
 MODELS_ID = {
     "Mistral - 7B - Instruct - Version 0.3": "mistralai/Mistral-7B-Instruct-v0.3",
@@ -181,7 +183,7 @@ def generate_conversation_html(conversation):
 
 def validate_hf_token():
     """Prompt the user to input the Hugging Face API token."""
-    hf_token = st.text_input("Please enter your Hugging Face token.", value="")
+    hf_token = st.text_input("Please enter your Hugging Face token.", value=DEFAULT_HUGGING_FACE_TOKEN)
     if st.button("Validate"):
         if not hf_token:
             st.error("The token cannot be blank")
