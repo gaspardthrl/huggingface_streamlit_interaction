@@ -16,7 +16,7 @@ To run the application locally:
 1. Clone the repository:
 
    ```sh
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/gaspardthrl/huggingface_streamlit_interaction)
    ```
 
 2. Install the required packages:
@@ -36,13 +36,6 @@ To run the application locally:
 - **Python 3.11+**
 - **Streamlit**: For the user interface.
 - **Hugging Face Hub**: For interacting with the LLMs.
-
-Ensure that `requirements.txt` includes the following:
-
-```
-streamlit
-huggingface_hub
-```
 
 ## Usage
 
